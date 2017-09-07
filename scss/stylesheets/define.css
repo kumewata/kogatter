@@ -1,0 +1,15 @@
+/* line 14, ../sass/define.scss */
+* {
+  font-family: "A-OTF Gothic BBB Pr6N";
+  box-sizing: border-box;
+}
+
+/* line 20, ../sass/define.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 25, ../sass/define.scss */
+li {
+  list-style: none;
+}

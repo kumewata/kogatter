@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+@mixin img_circle($value) {
+  height: $value;
+  width: $value;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+
+
+@mixin border-check() {
+  border: 1px solid #000;
+  box-sizing: border-box;
+}

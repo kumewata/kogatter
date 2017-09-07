@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,IAAK;EACH,KAAK,ECGS,OAAO",
+"sources": ["test.scss","define.scss"],
+"names": [],
+"file": "pc.css"
+}

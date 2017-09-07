@@ -1,0 +1,201 @@
+@charset "UTF-8";
+
+@import "compass";
+@import "define";
+@import "_mixin.scss";
+@import "compass/reset";
+
+.header_top {
+  @include display-flex();
+  @include justify-content(space-between);
+  & img {
+    @include img_circle(30px);
+  }
+}
+
+section.main {
+  background-color: $main_color;
+  padding: 100px 0;
+}
+
+#main_login {
+  width: 1000px;
+  border: 1px solid #000;
+  background-color: white;
+  margin: 0 auto;
+  padding: 50px 150px;
+  & h2 {
+    font-size: 18px;
+    padding: 15px 0;
+  }
+  & input {
+    margin: 5px 0;
+  }
+  & a {
+    color: $sub_color;
+  }
+  & h1 {
+    font-size: 22px;
+    padding: 5px 0;
+  }
+}
+
+#main_password_change {
+  @extend #main_login;
+}
+
+#main_password_reset {
+  @extend #main_login;
+  & p {
+    padding: 15px 0;
+  }
+}
+
+#main_profile_edit {
+  @extend #main_login;
+  & img {
+    @include img_circle(200px);
+  }
+  & button {
+    margin: 5px 0;
+  }
+}
+
+#main_register {
+  @extend #main_login;
+}
+
+input.btn_green {
+  background: $sub_color;
+  @include border-radius(20px);
+  border-style: none;
+  color: white;
+  padding: 5px 20px;
+  &:hover {
+    @include opacity(0.3);
+  }
+}
+
+
+////////////////////////////
+#wrapper_top {
+  display: flex;
+  //align-items: flex-start;
+  @include align-items(flex-start);
+  width: $main_width;
+  margin: 0 auto;
+
+  div {
+    flex: 1;
+  }
+
+  #main_top {
+    flex: 1.5;
+  }
+}
+
+#profile-side {
+  background-color: $main_color;
+  height: 300px;
+  // 確認用、後で消す
+  @include border-check();
+}
+
+#main_top {
+  background-color: $base_color;
+  // 確認用、後で消す
+  height: 1000px;
+  @include border-check();
+}
+
+#right_space {
+  background-color: $main_color;
+  // 確認用、後で消す
+  height: 1000px;
+  @include border-check();
+}
+
+/******************
+* サイドプロフィール
+******************/
+
+#profile-side {
+
+  .profile-background-image {
+    height: 100px;
+    background-image: url("../../images/profile-back-image.JPG");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  .user-profile {
+    display: flex;
+
+    .user-image {
+      width: 100px;
+      height: 100px;
+      border-radius: 50px;
+      background-image: url("../../images/profile-image.png");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+    }
+
+  }
+
+  .user-count{
+    display: flex;
+
+    div {
+      flex: 1;
+      text-align: center;
+    }
+
+  }
+
+}
+
+/******************
+* メイン（トップページ）
+******************/
+
+#main_top {
+
+  #post_field {
+
+    .post-buttons {
+      display: flex;
+      align-items: flex-end;
+    }
+
+  }
+
+}
+
+/******************
+* メイン（ユーザー一覧）
+******************/
+#main_users_list {
+
+  display: flex;
+  flex-wrap: wrap;
+  //justify-content: space-between;
+
+  //align-items: flex-start;
+  //@include align-items(flex-start);
+  //width: $main_width;
+  //margin: 0 auto;
+  //
+  //div {
+  //  flex: 1;
+  //}
+  //
+  //#main_top {
+  //  flex: 1.5;
+  //}
+  div {
+    width: 100px;
+    margin-right: 20px;
+  }
+}

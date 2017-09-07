@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+
+//color
+$base_color   : #FFFFFF;
+$main_color   : #eeeeee;
+$sub_color    : #009245;
+$accent_color : #BFFF00;
+
+// メインの幅
+$main_width   : 1000px;
+
+//全部
+* {
+  font-family: "A-OTF Gothic BBB Pr6N";
+  box-sizing: border-box;
+}
+
+//aタグ
+a {
+  text-decoration: none;
+}
+
+//liタグ
+li {
+  list-style: none;
+}
